@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="frame">
+    <div id="myLocation">
+        <h3>Mijn informatie</h3>
+    </div>
+    <div id="weatherInfo">
+        <h3 id="mycity"></h3>
+        <label id="tempratuur"></label>
+      <label id="luchtvochtigheid"></label>
+      <label id="windsnelheid"></label>
+      <label id="windrichting"></label>
+      <label id="zonsopgang"></label>
+      <label id="zonsondergang"></label>
+    </div>
+
+    <div id="addForm">
+        <h3>Voeg een nieuwe vakantie bestemming toe</h3>
+        <form id="addcountryform">
+            <label>code</label><input type="text" name="code">
+            <label>name</label><input type="text" name="name">
+            <label>capital</label><input type="text" name="capital">
+            <label>region</label><input type="text" name="region">
+            <label>surface</label><input type="text" name="surfacearea">
+            <label>population</label><input type="text" name="population">
+
+            <button id="addbutton">Toevoegen</button>
+        </form>
+        <div id="addError"></div>
+    </div>
+
+    <div id="countryList">
+        <h3>Beschikbare vakantiebestemmingen</h3>
+
+        <div id="tableError"></div>
+
+      <table id="countyTable">
+        <thead>
+          <tr>
+            <th>Land</th>
+            <th>Hoofdstad</th>
+            <th>Regio</th>
+            <th>Oppervlakte</th>
+            <th>Inwoners</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+</div>
+
+<script src="locations.js"></script>
+
+</body>
+</html>
